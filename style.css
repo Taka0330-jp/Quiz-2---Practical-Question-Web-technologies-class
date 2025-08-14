@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 /* Header */
 header {
     background-color: rgb(210, 210, 210);
@@ -34,7 +49,7 @@ a {
     width: 100%;
     height: 600px;
     position: relative;
-    background-image: url("./images/hero.jpg");
+    background-image: url("./images/hero.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -45,7 +60,7 @@ a {
     left: 50px;
     right: 50px;
     bottom: 30px;
-    background: rgba(0, 0, 0, .35);
+    background: rgba(255, 255, 255, 0.35);
     z-index: 1;
 }
 
@@ -55,7 +70,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 30;
-    color: #fff;
+    color: #000000;
 }
 
 /* Intro */
