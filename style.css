@@ -39,11 +39,20 @@ a {
     background-position: center;
 }
 
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
+    z-index: 1;
+}
+
 .banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 30;
+    color: #fff;
 }
 
 /* footer */
@@ -51,4 +60,30 @@ footer {
     color: #fff;
     height: 100px;
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1.5rem 1.25rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: .75rem;
+    }
+
+    ul {
+        gap: 1.25rem;
+    }
+
+    .hero {
+        height: 420px;
+    }
+
+    .banner-text {
+        font-size: 1.8rem;
+    }
 }
