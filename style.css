@@ -55,6 +55,27 @@ a {
     color: #fff;
 }
 
+/* Intro */
+.intro {
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+
 /* footer */
 footer {
     color: #fff;
@@ -85,5 +106,14 @@ footer {
 
     .banner-text {
         font-size: 1.8rem;
+    }
+
+    .intro {
+        padding: 2rem 1rem;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+
     }
 }
